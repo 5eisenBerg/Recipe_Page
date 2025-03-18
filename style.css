@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-container {
+  background-color: #f3e6d8;
+  min-height: 100vh;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.card-container {
+  background-color: #ffffff;
+  width: 50%;
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.container {
+  width: 98%;
+  align-self: center;
+}
+
+.image {
+  width: 100%;
+  align-self: center;
+  border-radius: 12px;
+}
+
+.img-container{
+  margin-bottom: 0;
+}
+
+.recipe-container {
+  margin-top: 20px;
+}
+
+.recipe-heading {
+  font-family: "Young Serif", serif;
+  text-align: left;
+  color: #302d2c;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.description {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  padding-top: 10px;
+  font-size: 16px;
+  color: #5f574e;
+}
+
+.preparation-container {
+  background-color: #fff5fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.list-container {
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+.preparation-heading {
+  color: #7b284f;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.side-heading {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+}
+
+.list-item::marker {
+  font-weight: bold;
+}
+
+.list-item {
+  padding-bottom: 10px;
+  padding-left: 20px;
+  font-family: "Outfit", sans-serif;
+  color: #5f574e;
+}
+
+.block-container {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.block-heading {
+  font-weight: 100;
+  color: #854632;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.horizontal {
+  color: #e4ded8;
+  opacity: 0.4;
+}
+
+.last {
+  margin-bottom: 0;
+}
+
+.bottom {
+  padding-bottom: 10px;
+}
+
+.nutrition-value-container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-top: 14px;
+  margin-left: 30px;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.nutrition {
+  font-family: "Outfit", sans-serif;
+  color: #5f574e;
+}
+
+.value {
+  font-family: "Outfit", sans-serif;
+  color: #854632;
+  font-weight: bold;
+  text-align: left;
+}
+
+.left {
+  width: 65px;
+  text-align: left;
+}
+
+.top{
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 650px) {
+  .bg-container{
+    padding: 0;
+    background-color: #ffffff;
+  }
+  .card-container {
+    width: 100vw;
+    padding-top: 0;
+    border-radius: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .container {
+    width: 100%;
+  }
+  .top{
+    display: block;
+  }
+  .bottom{
+    display: none;
+  }
+  .image {
+    width: 100vw;
+    border-radius: 0;
+  }
+}
